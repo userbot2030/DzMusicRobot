@@ -96,14 +96,14 @@ buttons = [
         InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="fallen_"),
     ],
     [
-        InlineKeyboardButton(text="", callback_data""),
+        InlineKeyboardButton(text="ᴊᴀsᴀ ʙᴏᴛ🤖", callback_data"fallen_jasa"),
     ],
     [
-        InlineKeyboardButton(text="", url=f"t.me/{CHANNEL}"),
-        InlineKeyboardButton(text="", url=f"t.me/{SUPPORT}"),
+        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"t.me/{CHANNEL}"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT}"),
     ],
     [
-        InlineKeyboardButton(text="", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
+        InlineKeyboardButton(text="ᴛᴀᴍʙᴀʜᴋᴀɴ ɢᴡ ᴋᴇ ɢʀᴏᴜᴘ ʟᴜ➕", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
     ],
 ]
 
