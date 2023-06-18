@@ -45,6 +45,7 @@ from FallenRobot.modules import ALL_MODULES
 from FallenRobot.modules.helper_funcs.chat_status import is_user_admin
 from FallenRobot.modules.helper_funcs.misc import paginate_modules
 from MSDZULQURNAIN.manage import DASAR, LANJUT, AHLI, PRO
+from MSDZULQURNAIN.jasa import JASA
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -490,6 +491,19 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     InlineKeyboardButton(text="🔙 Kembali ke Panduan", callback_data="fallen_pro"),
                 ],
+            ),
+        )
+    elif query.data == "fallen_jasa":
+        query.message.edit_text(
+            text=JASA,
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    InlineKeyboardButton(text="Admin 👤", url=f"tg://user?id={OWNER_ID}"),
+                ],
+                [
+                    InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
+                ], 
             ),
         )
     elif query.data == "fallen_back":
