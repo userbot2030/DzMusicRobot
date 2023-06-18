@@ -44,7 +44,7 @@ from FallenRobot import (
 from FallenRobot.modules import ALL_MODULES
 from FallenRobot.modules.helper_funcs.chat_status import is_user_admin
 from FallenRobot.modules.helper_funcs.misc import paginate_modules
-
+from MSDZULQURNAIN.manage import DASAR, LANJUT, AHLI, PRO
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -99,7 +99,7 @@ buttons = [
         InlineKeyboardButton(text="ᴊᴀsᴀ ʙᴏᴛ🤖", callback_data"fallen_jasa"),
     ],
     [
-        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"t.me/{CHANNEL}"),
+        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"t.me/MSPR0JECT"),
         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT}"),
     ],
     [
@@ -461,6 +461,26 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                     InlineKeyboardButton(text="🔙 Kembali ke Panduan", callback_data="fallen_manage")
                 ],
             ),
+        )
+    elif query.data == "fallen_lanjut":
+        query.message.edit_text(
+            text=LANJUT,
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    InlineKeyboardButton(text="🔙 Kembali ke Panduan", callback_data="fallen_manage"),
+                ],
+            ),
+        )
+    elif query.data == "fallen_ahli":
+        query.message.edit_text(
+            text=AHLI,
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    InlineKeyboardButton(text="🔙 Kembali ke Panduan", callback_data="fallen_manage"),
+                ],
+            )
         )
     elif query.data == "fallen_back":
         first_name = update.effective_user.first_name
