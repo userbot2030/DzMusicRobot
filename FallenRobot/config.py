@@ -10,8 +10,8 @@ class Config(object):
     DATABASE_URL = "postgres://xgjapvne:JAVP4wiquJr5a-99moi-XV4EYxBZ4F3X@hansken.db.elephantsql.com/xgjapvne"
     MONGO_DB_URI = "mongodb+srv://elia:chan@elia.peyngcs.mongodb.net/?retryWrites=true&w=majority"
     START_IMG = ""
-    CASH_API_KEY = ""
-    TIME_API_KEY = ""
+    CASH_API_KEY = "ZMOE8Q6BE25J7BEU"
+    TIME_API_KEY = "J1BBEIOV38CZ"
 
     # Optional fields
     BL_CHATS = []  # List of groups that you want blacklisted.
