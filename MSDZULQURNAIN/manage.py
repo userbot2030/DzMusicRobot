@@ -23,3 +23,22 @@ DASAR = """
 
 ◽️ `/staff` memberikan Daftar lengkap Staf grup
 """
+
+LANJUT = """
+**Perintah Lanjutan**
+
+🕵🏻 Tersedia untuk Admin
+👮🏻 Tersedia untuk Admin & Moderator
+🛃 Tersedia untuk Admin & Pembersih Obrolan
+
+**MANAJEMEN PERINGATAN**
+👮🏻 `/warn` memberikan peringatan ke pengguna
+👮🏻 `/resetwarn` menghapus 
+👮🏻 `/warnlist` memungkinkan anda melihat dan mengelola peringatan pengguna
+🕵🏻 `/dwarn` menghapus pesan dan memberikan peringatan ke pengguna
+
+🛃 `/del` menghapus pesan yang dipilih
+🛃 `/purge` sama seperti `/del` lebih efisien
+
+◽️ `/report` atau @admin melaporkan pengguna ke admin
+"""
