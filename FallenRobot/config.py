@@ -5,7 +5,7 @@ class Config(object):
     API_HASH = "f936697c5c9e5bffd433babef7a4e4c9"
     TOKEN = "6049689032:AAH_Nmx-icacIb5FEAolpLdyiUnZjH11SU4"
     OWNER_ID = 1337085565
-    EVENT_LOGS = ()
+    EVENT_LOGS = (-1001935424604)
     SUPPORT_CHAT = "envSample"
     DATABASE_URL = "postgres://xgjapvne:JAVP4wiquJr5a-99moi-XV4EYxBZ4F3X@hansken.db.elephantsql.com/xgjapvne"
     MONGO_DB_URI = "mongodb+srv://elia:chan@elia.peyngcs.mongodb.net/?retryWrites=true&w=majority"
