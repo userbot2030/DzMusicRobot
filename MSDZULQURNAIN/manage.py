@@ -42,3 +42,19 @@ LANJUT = """
 
 ◽️ `/report` atau @admin melaporkan pengguna ke admin
 """
+
+AHLI = """
+**Perintah Ahli**
+
+👥 Tersedia untuk semua pengguna
+👮🏻 Tersedia untuk Admin & Moderator
+🕵🏻 Tersedia untuk Admin
+
+👥 `/admins` melihat daftar admin
+👮🏻 `/admincache` memulai ulang cache admin
+
+**Pesan Tersemat**
+🕵🏻 `/pin` menyematkan pesan dengan membalas ke pesan.
+🕵🏻 `/unpin` menghapus pesan sematan.
+👥 `/pinned` melihat daftar pin yang ada di group
+"""
