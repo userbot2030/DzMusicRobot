@@ -58,3 +58,23 @@ AHLI = """
 🕵🏻 `/unpin` menghapus pesan sematan.
 👥 `/pinned` melihat daftar pin yang ada di group
 """
+
+PRO = """
+**Perintah pro**
+
+👥 Tersedia untuk semua pengguna
+👮🏻 Tersedia untuk admin & moderator
+🕵🏻 Tersedia untuk admin
+
+**Rules Group**
+👥 `/rules` melihat rules group
+👮🏻 `/setrules` pasang rules digroup
+👮🏻 `/clearrules` menghapus rules
+
+**Note group**
+👮🏻 `/notes` melihat notes digroup
+👮🏻 `/save [note name]` menyimpan note
+👮🏻 `/get [note name]` menampilkan note
+👮🏻 `/clear [note name]` hapus note name
+👮🏻 `/removeallnotes` hapus semua notes
+"""
