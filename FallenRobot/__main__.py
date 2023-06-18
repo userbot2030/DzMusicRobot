@@ -96,7 +96,7 @@ buttons = [
         InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="fallen_"),
     ],
     [
-        InlineKeyboardButton(text="ᴊᴀsᴀ ʙᴏᴛ🤖", callback_data"fallen_jasa"),
+        InlineKeyboardButton(text="ᴊᴀsᴀ ʙᴏᴛ🤖", callback_data="fallen_jasa"),
     ],
     [
         InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"t.me/MSPR0JECT"),
