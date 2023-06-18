@@ -108,26 +108,6 @@ buttons = [
 ]
 
 
-buttons = [
-    [
-        InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
-            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-        ),
-    ],
-    [
-        InlineKeyboardButton(text="ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(text="❄ ᴀʙᴏᴜᴛ ❄", callback_data="fallen_"),
-        InlineKeyboardButton(text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=f"https://t.me/{SUPPORT_CHAT}"),
-    ],
-    [
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="☁️ sᴏᴜʀᴄᴇ ☁️", callback_data="source_"),
-    ],
-]
-
 HELP_STRINGS = f"""
 *» {BOT_NAME} ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*
 
@@ -451,15 +431,16 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
     elif query.data == "fallen_manage":
         query.message.edit_text(
             text="Selamat datang dimenu panduan",
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="💁🏻‍♂Perintah Dasar", callback_data="kynan_dasar"),
-                    InlineKeyboardButton(text="Lanjutan🙋🏻‍♂", callback_data="kynan_lanjut"),
+                    InlineKeyboardButton(text="💁🏻‍♂Perintah Dasar", callback_data="fallen_dasar"),
+                    InlineKeyboardButton(text="Lanjutan🙋🏻‍♂", callback_data="fallen_lanjut"),
                  ],
                  [
-                    InlineKeyboardButton(text="🕵🏻Ahli", callback_data="kynan_ahli"),
-                    InlineKeyboardButton(text="Panduan Pro💆🏻‍♂", callback_data="kynan_pro"),
+                    InlineKeyboardButton(text="🕵🏻Ahli", callback_data="fallen_ahli"),
+                    InlineKeyboardButton(text="Panduan Pro💆🏻‍♂", callback_data="fallen_pro"),
                  ],
                  [
                     InlineKeyboardButton(text="➕ Panduan Lengkap ➕", url=f"http://t.me/DzMusicRobot?start=help"),
@@ -469,6 +450,16 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                  
                  ]
                 ]
+            ),
+        )
+    elif query.data == "fallen_dasar":
+        query.message.edit_text(
+            text=DASAR,
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    InlineKeyboardButton(text="🔙 Kembali ke Panduan", callback_data="fallen_manage")
+                ],
             ),
         )
     elif query.data == "fallen_back":
