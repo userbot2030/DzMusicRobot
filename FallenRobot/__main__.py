@@ -97,6 +97,15 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="", callback_data""),
+    ],
+    [
+        InlineKeyboardButton(text="", url=f"t.me/{CHANNEL}"),
+        InlineKeyboardButton(text="", url=f"t.me/{SUPPORT}"),
+    ],
+    [
+        InlineKeyboardButton(text="", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
+    ],
+]
 
 
 buttons = [
