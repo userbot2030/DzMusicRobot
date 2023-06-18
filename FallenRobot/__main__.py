@@ -448,6 +448,29 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
+    elif query.data == "fallen_manage":
+        query.message.edit_text(
+            text="Selamat datang dimenu panduan",
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="💁🏻‍♂Perintah Dasar", callback_data="kynan_dasar"),
+                    InlineKeyboardButton(text="Lanjutan🙋🏻‍♂", callback_data="kynan_lanjut"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="🕵🏻Ahli", callback_data="kynan_ahli"),
+                    InlineKeyboardButton(text="Panduan Pro💆🏻‍♂", callback_data="kynan_pro"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="➕ Panduan Lengkap ➕", url=f"http://t.me/DzMusicRobot?start=help"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="🔙 Kembali", callback_data="fallen_back"),
+                 
+                 ]
+                ]
+            ),
+        )
     elif query.data == "fallen_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
