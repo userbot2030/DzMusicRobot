@@ -9,7 +9,7 @@ class Config(object):
     SUPPORT_CHAT = "envSample"
     DATABASE_URL = "postgres://xgjapvne:JAVP4wiquJr5a-99moi-XV4EYxBZ4F3X@hansken.db.elephantsql.com/xgjapvne"
     MONGO_DB_URI = "mongodb+srv://elia:chan@elia.peyngcs.mongodb.net/?retryWrites=true&w=majority"
-    START_IMG = ""
+    START_IMG = "https://telegra.ph/file/d3b40cbdcbd84bfca790d.jpg"
     CASH_API_KEY = "ZMOE8Q6BE25J7BEU"
     TIME_API_KEY = "J1BBEIOV38CZ"
 
