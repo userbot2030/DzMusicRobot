@@ -89,6 +89,18 @@ PM_START_TEXT = """
 
 buttons = [
     [
+        InlineKeyboardButton(text="Developer 👤", url=f"tg://user?id={OWNER_ID}"),
+    ],
+    [
+        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="fallen_manage"),
+        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="fallen_"),
+    ],
+    [
+        InlineKeyboardButton(text="", callback_data""),
+
+
+buttons = [
+    [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
