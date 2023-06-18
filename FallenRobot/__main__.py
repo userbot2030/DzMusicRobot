@@ -101,7 +101,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"t.me/MSPR0JECT"),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT}"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(text="ᴛᴀᴍʙᴀʜᴋᴀɴ ɢᴡ ᴋᴇ ɢʀᴏᴜᴘ ʟᴜ➕", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
@@ -551,6 +551,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "source_back":
         first_name = update.effective_user.first_name
+        uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
             PM_START_TEXT.format(
                 escape_markdown(first_name),
